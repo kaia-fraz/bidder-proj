@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini Bidding App</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <div class="max-w-md mx-auto mt-10 p-6 bg-white rounded shadow">
+    <h2 class="text-2xl font-bold mb-4 text-center">Miniature Bidding App</h2>
+    <form id="bid-form" class="space-y-4">
+      <div>
+        <label id="bidder1-label" class="block font-semibold mb-1">Bidder 1</label>
+        <input type="number" id="bidder1" class="w-full border rounded px-3 py-2 bid-input" min="0" required>
+      </div>
+      <div>
+        <label id="bidder2-label" class="block font-semibold mb-1">Bidder 2</label>
+        <input type="number" id="bidder2" class="w-full border rounded px-3 py-2 bid-input" min="0" required>
+      </div>
+      <button type="submit" class="w-full bg-blue-600 text-white py-2 rounded font-bold">Place Bids</button>
+    </form>
+
+    <div class="mt-6 text-center">
+      <p class="font-semibold">
+        Highest Bidder: <span id="result" class="text-red-600">No bids yet</span>
+      </p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
