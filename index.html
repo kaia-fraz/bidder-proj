@@ -20,12 +20,24 @@
       </div>
       <button type="submit" class="w-full bg-blue-600 text-white py-2 rounded font-bold">Place Bids</button>
     </form>
+    <div class="mt-6 text-center">
+      <p class="font-semibold">bid 1: <span id="bidder1-result" class="text-red-600">0</span></p>
+      <p class="font-semibold">bid 2: <span id="bidder2-result" class="text-red-600">0</span></p>
+    </div>
 
     <div class="mt-6 text-center">
       <p class="font-semibold">
         Highest Bidder: <span id="result" class="text-red-600">No bids yet</span>
       </p>
-    </div>
+    </div>  
+  </div>
+
+  <div>
+    <fieldset class="max-w-md mx-auto mt-10 p-6 bg-white rounded shadow">
+      <legend class="text-xl font-bold mb-4 text-center">Bid History</legend>
+      <ul id="bidhstry" class="list-disc list-inside space-y-2 max-h-48 overflow-y-auto">
+        <!-- Bid history entries will be appended here -->
+      </ul>
   </div>
 
   <script src="script.js"></script>
